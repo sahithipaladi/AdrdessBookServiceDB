@@ -30,3 +30,8 @@ Select Count(*) As Count,City,State from AddressBookServiceTable group by City,S
 Insert into AddressBookServiceTable 
 values('Rahul','P','Kanigiri Road','Pamur','AndhraPradesh',523108,9995559955,'rahul@gamil.com');
 select * from AddressBookServiceTable where city='Pamur' order by FirstName;
+----------UC9:Add the address book name and type columns-----------
+alter table AddressBookServiceTable add AddressBookName varchar(50),RelationType varchar(50);
+
+update AddressBookServiceTable set AddressBookName='Friends',RelationType='Friend' where FirstName='Sameera' ;
+update AddressBookServiceTable set AddressBookName ='Family',RelationType ='Family' where zip=523108;
