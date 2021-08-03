@@ -22,3 +22,5 @@ values('Arjun','A','Nellore Road','Pamur','AndhraPradesh',523108,8858548393,'arj
 update AddressBookServiceTable set Email='vani123@gmail.com' where FirstName='Vanitha';
 ------ UC5:Delete Values in Table ------
 delete AddressBookServiceTable where FirstName='Vanitha';
+------ UC6:Retrieve Data using City or State------
+select * from AddressBookServiceTable where city='Nellore' or State='AndhraPradesh';
