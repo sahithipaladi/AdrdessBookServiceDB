@@ -37,3 +37,7 @@ update AddressBookServiceTable set AddressBookName='Friends',RelationType='Frien
 update AddressBookServiceTable set AddressBookName ='Family',RelationType ='Family' where zip=523108;
 ----------UC10:Count the values using address book type -----------
 select RelationType,COUNT(RelationType) as Count from AddressBookServiceTable group by RelationType
+----------UC11:Insert the values into table for each type -----------
+Insert into AddressBookServiceTable 
+values('Kalyani','P','CMBT','Chennai','TamilNadu',600068,93839284839,'kalyani@gamil.com','Office','Profession'),
+('Harini','K','T-Nagar','Chennai','TamilNadu',600068,83938392848,'harini@gamil.com','Friends','Friend');
