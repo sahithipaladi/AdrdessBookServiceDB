@@ -26,3 +26,7 @@ delete AddressBookServiceTable where FirstName='Vanitha';
 select * from AddressBookServiceTable where city='Nellore' or State='AndhraPradesh';
 ------ UC7:Count of City and State------
 Select Count(*) As Count,City,State from AddressBookServiceTable group by City,State;
+------ UC8:Sort the name alphabetically using city------
+Insert into AddressBookServiceTable 
+values('Rahul','P','Kanigiri Road','Pamur','AndhraPradesh',523108,9995559955,'rahul@gamil.com');
+select * from AddressBookServiceTable where city='Pamur' order by FirstName;
