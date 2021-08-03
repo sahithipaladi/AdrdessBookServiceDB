@@ -20,3 +20,5 @@ values('Arjun','A','Nellore Road','Pamur','AndhraPradesh',523108,8858548393,'arj
 ('Sameera','S','Magunta Layout','Nellore','AndhraPradesh',524003,8393839475,'sameera@gmail.com');
 ------ UC4:Update Values in Table ------
 update AddressBookServiceTable set Email='vani123@gmail.com' where FirstName='Vanitha';
+------ UC5:Delete Values in Table ------
+delete AddressBookServiceTable where FirstName='Vanitha';
