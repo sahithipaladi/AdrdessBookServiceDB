@@ -24,3 +24,5 @@ update AddressBookServiceTable set Email='vani123@gmail.com' where FirstName='Va
 delete AddressBookServiceTable where FirstName='Vanitha';
 ------ UC6:Retrieve Data using City or State------
 select * from AddressBookServiceTable where city='Nellore' or State='AndhraPradesh';
+------ UC7:Count of City and State------
+Select Count(*) As Count,City,State from AddressBookServiceTable group by City,State;
